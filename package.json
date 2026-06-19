@@ -1,0 +1,23 @@
+{
+  "name": "kodi-websocket-server-template-b",
+  "version": "1.0.0",
+  "description": "KODI / Template B realtime pub/sub WebSocket relay for chat. Open-sourced from KODI-Kommunen-Digital.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "pretty": "prettier --write .",
+    "deploy": "pm2 start index.js --name \"WebsocketServer\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "EUPL-1.2",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "ws": "^8.17.1"
+  }
+}
